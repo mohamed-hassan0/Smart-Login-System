@@ -81,7 +81,6 @@ if ((logInBtn != null) == true) {
             localStorage.setItem("name", JSON.stringify(usersInfo[i].name));
             localStorage.setItem("index", JSON.stringify(i));
             clearLogInInputs();
-            // location.assign("/home.html");
             window.open("home.html")
           }
         }
@@ -107,13 +106,13 @@ function clearLogInInputs() {
 var welcomingName = localStorage.getItem("name");
 var userIndex = localStorage.getItem("index");
 var logOut = document.querySelector("#logOut");
-if (location.pathname == "/home.html") {
+if ((logOut != null) == true) {
     document.querySelector(".home").innerHTML = `Welcome ${JSON.parse(
       welcomingName
     )}`;
   logOut.addEventListener("click", function () {
     usersInfo.splice(userIndex,1);
     localStorage.setItem("usersInfo", JSON.stringify(usersInfo))
-    location.assign("/index.html");
+    window.close();
   });
 };
