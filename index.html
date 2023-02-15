@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Smart Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="wrapper w-75 black-shadow m-auto my-5 p-5">
+          <h2 class="fs-1 text-center py-3 mb-4 txt-color">
+            Smart Login System
+          </h2>
+          <div class="form-group">
+            <input
+              type="email"
+              placeholder="Enter your Email"
+              class="bg-transparent w-100 mb-3 p-2 rounded-2 text-white"
+              id="logInEmail"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              placeholder="Enter your password"
+              class="bg-transparent w-100 mb-3 p-2 rounded-2 text-white"
+              id="logInPassword"
+            />
+          </div>
+          <h3 class="logInLost d-none text-danger text-center fs-5">
+            All inputs required
+          </h3>
+          <h3 class="notFound d-none text-danger text-center fs-5">
+            incorrect Email or password
+          </h3>
+          <button class="btn btn-outline-info w-100 mt-4" id="logInBtn">Login</button>
+          <p class="text-center text-white mt-3">
+            Don't have an accout?
+            <a href="signup.html" class="text-white text-decoration-none"
+              >Sign Up</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

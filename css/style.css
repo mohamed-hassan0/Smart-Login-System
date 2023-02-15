@@ -1,0 +1,24 @@
+::placeholder {
+  color: #545d67;
+}
+input:focus {
+  outline: none;
+}
+input {
+  border: 1px solid white !important;
+}
+body {
+  background-color: #24353f;
+}
+.dark-blue {
+  background-color: #24353f !important;
+}
+.txt-color {
+  color: rgb(23, 162, 184);
+}
+.black-shadow {
+  box-shadow: -5px 2px 54px -9px rgb(0 0 0) !important;
+}
+a:hover {
+  text-decoration: underline !important;
+}

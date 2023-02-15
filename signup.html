@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>sign up</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="wrapper w-75 black-shadow m-auto my-5 p-5">
+          <h2 class="fs-1 text-center py-3 mb-4 txt-color">
+            Smart Login System
+          </h2>
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="Enter your name"
+              class="bg-transparent w-100 mb-3 p-2 rounded-2 text-white"
+              id="userNameInput"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              placeholder="Enter your Email"
+              class="bg-transparent w-100 mb-3 p-2 rounded-2 text-white"
+              id="userEmailInput"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              placeholder="Enter your password"
+              class="bg-transparent w-100 mb-3 p-2 rounded-2 text-white"
+              id="userPasswordInput"
+            />
+          </div>
+          <h3 class="required d-none text-danger text-center fs-5">
+            All inputs required
+          </h3>
+          <p class="d-none success text-center fs-5 text-success">Success</p>
+          <button class="btn btn-outline-info w-100 mt-4" id="signUpBtn">sign up</button>
+          <p class="text-center text-white mt-3">
+            You have an account?
+            <a href="index.html" class="text-white text-decoration-none"
+              >Sign in</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
