@@ -81,7 +81,8 @@ if ((logInBtn != null) == true) {
             localStorage.setItem("name", JSON.stringify(usersInfo[i].name));
             localStorage.setItem("index", JSON.stringify(i));
             clearLogInInputs();
-            location.assign("/home.html");
+            // location.assign("/home.html");
+            window.open("home.html")
           }
         }
       }
